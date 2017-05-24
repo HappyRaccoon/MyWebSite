@@ -1,0 +1,346 @@
+.first {
+  background-image: url('../img/bg_first.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.first header {
+  margin-top: 25px;
+}
+.first header ul {
+  float: right;
+}
+.first header ul li {
+  padding: 0 20px;
+}
+.first header ul li a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 7px;
+}
+.first header ul li a:hover {
+  color: #fce38a;
+  border-bottom: 2px solid #fce38a;
+}
+.first .one {
+  text-align: center;
+  margin-top: 100px;
+}
+.first .one h2 {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 50px;
+  color: #fff;
+  margin: 0;
+}
+.first .one h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 90px;
+  font-weight: bold;
+  line-height: 85px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+.first .one p {
+  color: #fff;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+.first .one a {
+  border: 3px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 11px 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+.first .two {
+  text-align: center;
+  margin-top: 130px;
+}
+.first .two ul li {
+  padding: 0 15px;
+}
+.first .two ul li a {
+  border-top: 3px solid #faf4e0;
+  padding: 20px 120px 0 0;
+  color: #faf4e0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+}
+.first .two ul li a:hover {
+  color: #f38181;
+  border-top: 3px solid #f38181;
+}
+.first .two ul li a span {
+  font-size: 18px;
+}
+.second {
+  margin-top: 100vh;
+  text-align: center;
+  color: #333333;
+}
+.second h4 {
+  margin-top: 80px;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 24px;
+}
+.second h3 {
+  margin-top: 23px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.second .a {
+  margin-top: 30px;
+  color: #f38181;
+  font-size: 40px;
+}
+.second .b {
+  margin-top: 30px;
+  color: #999999;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+}
+.second .row {
+  margin-top: 70px;
+  margin-bottom: 100px;
+  /*display: flex;
+  justify-content: space-between;*/
+}
+.third {
+  background-color: #95e1d3;
+}
+.third .row {
+  padding: 0;
+  margin: 0;
+  border-right: 1px solid #fff;
+}
+.third .row div {
+  float: left;
+  text-align: center;
+  width: 20%;
+  color: #fff;
+  padding: 80px 0;
+  border-left: 1px solid #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+.third .row div h3 {
+  font-weight: bold;
+  font-size: 72px;
+}
+.third .row div h6 {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.fourth {
+  text-align: center;
+  color: #333333;
+}
+.fourth h4 {
+  margin-top: 80px;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 24px;
+}
+.fourth h3 {
+  margin-top: 23px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.fourth p {
+  margin-top: 30px;
+  color: #f38181;
+  font-size: 40px;
+}
+.fourth .one {
+  border-bottom: 1px solid #b6b6b6;
+  margin-top: 60px;
+  padding-bottom: 30px;
+}
+.fourth .two {
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+.fourth .block {
+  text-align: left;
+}
+.fourth .block .left {
+  float: left;
+  margin-left: 10px;
+}
+.fourth .block .right {
+  margin-left: 60px;
+}
+.fourth .block h3 {
+  margin: 0;
+  color: #333333;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.fourth .block p {
+  margin: 0;
+  padding-top: 12px;
+  color: #b6b6b6;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+.fifth {
+  text-align: center;
+  background: #f8f8f8;
+}
+.fifth h4 {
+  margin-top: 80px;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 24px;
+}
+.fifth h3 {
+  margin-top: 23px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.fifth .a {
+  margin-top: 30px;
+  color: #f38181;
+  font-size: 40px;
+}
+.fifth .b {
+  margin-top: 30px;
+  color: #999999;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+}
+.fifth .row .block {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.fifth .row .block img {
+  width: 300px;
+}
+.fifth .row .block h6 {
+  margin-top: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+.fifth .row .block p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: #999;
+}
+.sixth .row {
+  margin-top: 50px;
+}
+.sixth .row .left img {
+  margin-bottom: 30px;
+}
+.sixth .row .left p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #999;
+}
+.sixth .row .left div {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+.sixth .row .left div p {
+  font-family: 'Montserrat', sans-serif;
+  color: #333333;
+  font-size: 14px;
+}
+.sixth .row .left div p span {
+  font-size: 18px;
+}
+.sixth .row .left .follow {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #999;
+}
+.sixth .row .left i {
+  font-size: 25px;
+  color: #95e1d3;
+}
+footer {
+  text-align: center;
+  background: #f8f8f8;
+}
+footer p {
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+@media screen and (max-width: 479px) {
+  .first header ul {
+    margin-top: 15px;
+  }
+  .first header ul li {
+    padding: 10px 20px 0 45px;
+  }
+  .first .one h2 {
+    font-size: 30px;
+  }
+  .first .one h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .second .row .img {
+    margin-top: 20px;
+  }
+  .second .row .img img {
+    width: 90%;
+  }
+  .third .row {
+    border: none;
+  }
+  .third .row div {
+    border: none;
+  }
+  .third .row div h3 {
+    font-size: 28px;
+  }
+  .third .row div h6 {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .first .one {
+    margin-top: 160px;
+  }
+  .first .one h1 {
+    margin-top: 90px;
+  }
+  .first .two ul li a {
+    padding: 0;
+  }
+  .second .row .img {
+    margin-top: 20px;
+  }
+  .second .row .img img {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .first .two ul li a {
+    padding: 0;
+  }
+}

@@ -1,0 +1,767 @@
+@font-face {
+	font-family: 'whatever it takes';
+	src: url('../fonts/whatever it takes.ttf'); 
+}
+@font-face {
+	font-family: 'whatever it takes bold';
+	src: url('../fonts/whatever it takes bold.ttf'); 
+}
+
+@Mont : 'Montserrat', sans-serif;
+@Roboto : 'Roboto Slab', serif;
+@Open : 'Open Sans', sans-serif;
+@What : 'whatever it takes';
+@WhatBold : 'whatever it takes bold';
+
+@hover: #e8500e;
+@standart: #fcfbf9;
+@white: #fff;
+@border: #e6e6e6;
+@gray: #414551; 
+
+.border-radius(@value) {
+	border-radius: @value;
+}
+.mar_auto {
+	float: none !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+header {
+	padding: 22px 0 22px;
+	background-color: #121924;
+	background-size: cover;
+
+	a {
+		&:visited {
+			outline: none !important;
+		}
+	}
+
+	ul{
+		float: right;
+		li{
+			padding: 10px 16px 0 15px; 
+
+			.active{
+				color: @hover;
+				font-weight: bold;
+			}
+
+			a{
+				text-decoration: none;
+				color:@standart;
+				font-family: @Mont;
+				font-size: 12px;
+				font-weight: bold;
+
+
+				&:hover{
+					color: @hover;
+						
+				}
+			}
+		}
+	}
+}
+.choose {
+	background-color: @standart;
+	.main {
+		padding: 0;
+	}
+
+	ul {
+		margin: 0;
+		padding: 15px 90px 15px 0;
+
+		li {
+			padding-right: 65px;
+		}
+	}	
+}
+
+.search {
+	background-image: url('../img/middle1.jpg');
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 389px;
+    overflow: hidden;
+    position: relative;
+
+	.container > div {
+		text-align: center;
+		margin-bottom: 10%;
+    	margin-top: 10%;
+		color: @white;
+
+		h2 {
+			font-size: 42px;
+			font-family: @Roboto;
+			font-weight: 400;
+			line-height: 32.5px;
+			letter-spacing: 4px;
+			margin-bottom: 23px;
+		}
+
+		p {
+			font-family: @Open;
+			font-size: 14px;
+			margin-bottom: 52px;
+		}
+
+		form {
+
+			font-family: @Open;
+			font-size: 15px;
+			line-height: 32.5px;
+
+			input[type='text'] {
+				max-width: 344px;
+				width: 100%;
+				height: 55px;
+				border: none;
+				color: #bbbcc0;
+				text-indent: 14px;
+				.border-radius(3px);
+
+			}
+
+			input[type='submit'] {
+				max-width: 200px;
+				width: 100%;
+				height: 55px;
+				.border-radius(3px);
+				border: none;
+				background: @hover url('../img/search.png') no-repeat right center;
+				
+				text-align: left;
+				padding-left: 6%;
+				padding-right: 3.25%;
+				background-origin: content-box;
+			}
+
+
+			::-webkit-input-placeholder {color:#bbbcc0;}
+			::-moz-placeholder          {color:#bbbcc0;}
+			:-moz-placeholder           {color:#bbbcc0;}
+			:-ms-input-placeholder      {color:#bbbcc0;}
+		}
+	}
+}
+
+.filters {
+	background: @white;
+	margin-bottom: 20px;
+
+	.header {
+		border-bottom: 1px solid @border;
+		background: @standart;
+		p {
+			display: inline-block;
+			float: left;
+			margin: 25px 0;
+			font-family: @Open;
+			font-size: 14px;
+			color: @gray;
+
+		}
+
+		p.one {
+			float: right;
+		}
+	}
+
+	.central {
+		margin-top: 30px;
+
+		aside {
+			border: 1px solid @border;
+			background-color: @standart;
+			padding: 0;
+
+			.first {
+				background-color: @hover;
+				padding: 22px 15px;
+				text-align: center;
+				ul {
+					margin: 0;
+
+					li{
+						&:nth-child(2) {
+							padding: 0 87px;
+						}
+
+						font-size: @Open;
+						font-weight: 600;
+						font-size: 13.43px;
+						color: @white;
+					}
+				}
+			}
+
+			.second {
+				margin: 19px auto 30px;
+				height: 50px;
+				width: 333px;
+				border: 1px solid @border;
+
+				form {
+					margin: 0;
+					padding: 0;
+					height: 100%;
+					width: 100%;
+					input[type='text'] {
+						font-family: @Open;
+						font-weight: 300;
+						color: #748796;
+						font-size: 14px;
+						text-indent: 15px;
+						margin: 0;
+						width: 271px;
+						height: 100%;
+						border: none;
+					}
+
+					input[type='submit'] {
+						width: 55px;
+						height: 35px;
+						background: @white url('../img/search2.png') no-repeat center;
+						border: none;
+						border-left: 1px solid @border;
+					}
+				}
+			}
+
+			.third {
+				border-bottom: 1px solid @border;
+				margin-bottom: 20px;
+				form {
+					ul {
+						margin-bottom: 40px;
+						li {
+							list-style: none;
+							margin-bottom: 10px;
+							label {
+								font-family: @Open;
+								font-size: 14px;
+								font-weight: 300;
+								line-height: 30px;
+								color: @gray;
+								text-indent: 15px;
+							}
+						}
+					}
+					// styles for IE 8-
+					.checkbox {
+  						vertical-align: top;
+  						margin: 0 3px 0 0;
+  						width: 17px;
+ 						height: 17px;
+					}
+					// показываем, что label кликабельный
+					.checkbox + label {
+  						cursor: pointer;
+					}
+					// прячем оригинальный чекбокс
+					.checkbox:not(checked) {
+  						position: absolute;
+  						opacity: 0;
+					}
+					// позиционируем псевдочекбокс и оставляем слева от label место под псевдочекбокс
+					.checkbox:not(checked) + label {
+  						position: relative; 
+  						padding: 0 0 0 40px; 
+					}
+					// оформляем чекбокс в выкл состоянии
+					.checkbox:not(checked) + label:before {
+  						content: '';
+  						position: absolute;
+  						top: -3px;
+  						left: 0;
+  						width: 23px;
+  						height: 23px;
+  						border: 1px solid @border;
+  						border-radius: 50%;
+  						background: #FFF;
+					}
+					// Оформление второй части чекбокса в выключенном состоянии
+					.checkbox:not(checked) + label:after {
+  						content: '';
+  						position: absolute;
+  						left: 3px;
+  						width: 17px;
+  						height: 17px;
+ 						border-radius: 50%;
+  						background: @hover no-repeat center;
+  						background-image: url('../img/check2.png');
+  						box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+  						opacity: 0;
+  						transition: all .2s; /*анимация, чтобы чекбокс переключался плавно*/
+					}
+					.checkbox:checked + label:after {
+						opacity: 1;
+					}											
+				}
+			}
+
+			.fours {
+				border-bottom: 1px solid @border;
+				h4 {
+					margin-left: 20px;
+					font-family: @Open;
+					font-size: 11.51px;
+					line-height: 11.51px;
+					font-weight: 600;
+					text-transform: uppercase;
+					color: #52555f;
+				}
+
+				form {
+					ul {
+						margin-top: 20px;
+						li {
+							margin-left: 30px;
+						}
+					}
+					.radio {
+						vertical-align: top;
+  						margin: 0 3px 0 0;
+  						width: 17px;
+ 						height: 17px;
+					}
+					.radio + label {
+  						cursor: pointer;
+					}
+					.radio:not(checked) {
+  						position: absolute;
+  						opacity: 0;
+					}
+					.radio:not(checked) + label {
+  						position: relative; 
+  						padding: 0 0 0 30px; 
+					}
+					.radio:not(checked) + label:before {
+  						content: '';
+  						position: absolute;
+  						top: -3px;
+  						left: 0;
+  						width: 23px;
+  						height: 23px;
+  						border: 1px solid @border;
+  						border-radius: 50%;
+  						background: #FFF;
+					}
+					.radio:not(checked) + label:after {
+  						content: '';
+  						position: absolute;
+  						left: 3px;
+  						width: 17px;
+  						height: 17px;
+ 						border-radius: 50%;
+  						background: @hover no-repeat center;
+  						background-image: url('../img/check2.png');
+  						box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+  						opacity: 0;
+  						transition: all .2s; /*анимация, чтобы чекбокс переключался плавно*/
+					}
+					.radio:checked + label:after {
+						opacity: 1;
+					}
+					label {
+						font-family: @Open;
+						font-size: 14px;
+						font-weight: 300;
+						line-height: 30px;
+						color: @gray;
+						text-indent: 15px;
+					}
+				}
+			}
+			.fifth {
+				border-bottom: 1px solid @border;
+				p {
+					margin:20px 0 20px 20px;
+					label {
+						color: @gray;
+						font-family: @Open;
+						text-transform: uppercase;
+						font-weight: 600;
+						font-size: 11.51px;
+					}
+					input[type='text'] {
+						border:0;
+						color: @hover;
+					}
+				}
+				div {
+					max-width: 300px;
+					margin: 0 auto;
+					margin-bottom: 30px;
+				}
+				.ui-widget-header {
+					background-color: @hover;
+				}
+				.ui-state-active{
+					background-color: @hover;
+					border: @hover;
+				}
+			}
+			.sixth {
+				border-bottom: 1px solid @border;
+				h4 {
+					margin-left: 20px;
+					font-family: @Open;
+					font-size: 11.51px;
+					line-height: 11.51px;
+					font-weight: 600;
+					text-transform: uppercase;
+					color: #52555f;
+				}
+				form {
+					ul {
+						margin-top: 20px;
+						li {
+							list-style: none;
+							margin-bottom: 10px;
+						}
+					}
+					.checkbox {
+  						vertical-align: top;
+  						margin: 0 3px 0 0;
+  						width: 17px;
+ 						height: 17px;
+					}
+					// показываем, что label кликабельный
+					.checkbox + label {
+  						cursor: pointer;
+					}
+					// прячем оригинальный чекбокс
+					.checkbox:not(checked) {
+  						position: absolute;
+  						opacity: 0;
+					}
+					// позиционируем псевдочекбокс и оставляем слева от label место под псевдочекбокс
+					.checkbox:not(checked) + label {
+  						position: relative; 
+  						padding: 0 0 0 40px; 
+					}
+					// оформляем чекбокс в выкл состоянии
+					.checkbox:not(checked) + label:before {
+  						content: '';
+  						position: absolute;
+  						top: -3px;
+  						left: 0;
+  						width: 23px;
+  						height: 23px;
+  						border: 1px solid @border;
+  						border-radius: 50%;
+  						background: #FFF;
+					}
+					// Оформление второй части чекбокса в выключенном состоянии
+					.checkbox:not(checked) + label:after {
+  						content: '';
+  						position: absolute;
+  						left: 3px;
+  						width: 17px;
+  						height: 17px;
+ 						border-radius: 50%;
+  						background: @hover no-repeat center;
+  						background-image: url('../img/check2.png');
+  						box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+  						opacity: 0;
+  						transition: all .2s; /*анимация, чтобы чекбокс переключался плавно*/
+					}
+					.checkbox:checked + label:after {
+						opacity: 1;
+					}
+				}
+			}	
+		}
+		.restaurants {
+			.row {
+				border: 1px solid #ededed;
+				margin: 0 0 30px 30px;
+				background-color: @standart;
+			}
+			.block {
+				height: 100%;
+				border-radius: 2px;
+				display: flex;
+				float: left;
+
+				.left {
+					float: left;
+					padding: 15px 17px 15px 15px;
+				}
+				.middle {
+					font-family: @Open;
+					float: left;
+					padding: 15px 0;
+
+					h5 {
+						color: @gray;
+						font-size: 18px;
+						font-weight: 600;
+						margin: 0;
+						margin-top: 6px;
+					}
+					h6 {
+						font-size: 14px;
+						color: #748796;
+						font-weight: 300;
+						margin-top: 18px;
+						margin-bottom: 13px;
+					}
+
+					.options {
+						& > div {
+							float: left;
+
+							&:nth-child(1) {
+								img {
+									top: 1px;
+								}
+							}
+							&:nth-child(2) {
+								img {
+									top: 3px;
+								}
+							}
+
+							img {
+								margin-right: 8px;
+								position: relative;
+								top: 2px;
+								float: left;
+							}
+
+							span {
+								color: #748796;
+								font-size: 14px;
+								font-weight: 300;
+							}
+						}
+
+						.price,.time {
+							margin: 0;
+							margin-right: 40px;
+						}
+					}
+				}
+			}
+
+			.right {
+				height: 100%;
+				float: right;
+				border-left: 1px solid @border;
+				background-color: @white;
+				padding: 15px 37px;
+				text-align: center;
+				img {
+
+				}
+				h6 {
+					font-size: 14px;
+					color: #748796;
+					font-weight: 300;
+					margin-top: 18px;
+					margin-bottom: 13px;
+				}
+				a {
+					display: inline-block;
+					float: right;
+					color: @hover;
+					font-size: 14px;
+					font-weight: 300;
+					border: 2px dashed @hover;
+					border-radius: 3px;
+					padding: 6px 15px;
+					text-decoration: none;
+				}
+			}
+
+			nav {
+				margin-left: 12px;
+				ul {
+					li {
+						a {
+							color: #414551;
+							font-family: @Open;
+							font-size: 16px;
+							line-height: 32px;
+							padding-left: 20px;
+							padding-right: 20px;
+							margin: 0 2px;
+							.border-radius(3px);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+footer {
+	background: url('../img/footer_bg.jpg') no-repeat;
+	background-size: cover;
+	padding: 80px 0 95px;
+	position: relative;
+	z-index: 2;
+	margin-top: -5px;
+
+	.container {
+
+		.row:last-child {
+			margin-top: 90px;
+		}
+	}
+
+	.left {
+		margin-right: 50px !important;
+	}
+
+	h4 {
+		color: #fff;
+		font-size: 32px;
+		font-family: @What;
+		margin: 0;
+
+		span {
+			font-weight: bold;
+			color: #e8500e;
+		}
+	}
+
+	h5 {
+		color: #fff;
+		font-size: 21px;
+		font-weight: 300;
+		font-family: @Roboto;
+		margin: 0;
+		margin-bottom: 12px;
+	}
+
+	.main {
+		color: #a2a2a3;
+		font-size: 14px;
+		font-weight: 300;
+		font-family: @Open;
+		line-height: 32.5px;
+		list-style: none;
+		float: left;
+
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		text-decoration: none;
+		color: inherit;
+
+		&:hover {
+			text-decoration: none;
+			color: @hover;
+		}
+	}
+
+	img {
+		margin-right: 8px;
+	}
+
+	.special {
+		margin-top: 35px;
+
+		span {
+			color: #fff;
+			font-size: 21px;
+			font-family: @Roboto;
+			font-weight: 300;
+			margin-right: 15px;
+		}
+		a {
+			font-family: @WhatBold;
+			font-weight: bold;
+			color: #e8500e;
+			font-size: 26px;
+		}
+	}
+}
+
+
+
+
+@media screen and (max-width:479px) {
+
+	.choose {
+		li{
+			margin: 15px 0 15px 25px;
+		}
+	}
+
+	.search {
+		h2{
+			line-height: 42px !important;
+		}
+
+		form input[type="submit"] {
+			margin-top: 20px;
+		}
+	}
+
+	.filters {
+		aside {
+			.first {
+				li {
+					&:nth-child(2) {
+    					padding: 0 20px !important;
+					}
+				}
+			}
+			.second {
+				width: 100%;
+				form {
+					input[type='text'] {
+						width: 200px !important;
+					}
+				}
+			}
+		}
+		.restaurants {
+			margin-top: 20px;
+			.row {
+				margin: 0 0 30px 0px !important;
+			}
+			.right {
+				width: 100%;
+				border: none !important;
+				border-top: 1px solid @border !important;
+				a {
+					margin-right: 27% !important;
+				}
+			}
+		}
+	}
+
+	footer {
+		text-align: center;
+
+		.container {
+			.row:last-child {
+			margin-top: 10px;
+			}
+			.row > div {
+			margin-bottom: 30px;
+			}
+		}
+
+		.main {
+			float: none;
+		}
+
+		.left {
+			margin-right: 0 !important;
+		}
+	}
+}
+

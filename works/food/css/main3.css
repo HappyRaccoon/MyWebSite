@@ -1,0 +1,639 @@
+@font-face {
+  font-family: 'whatever it takes';
+  src: url('../fonts/whatever it takes.ttf');
+}
+@font-face {
+  font-family: 'whatever it takes bold';
+  src: url('../fonts/whatever it takes bold.ttf');
+}
+.mar_auto {
+  float: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+header {
+  padding: 22px 0 22px;
+  background-color: #121924;
+  background-size: cover;
+}
+header a:visited {
+  outline: none !important;
+}
+header ul {
+  float: right;
+}
+header ul li {
+  padding: 10px 16px 0 15px;
+}
+header ul li .active {
+  color: #e8500e;
+  font-weight: bold;
+}
+header ul li a {
+  text-decoration: none;
+  color: #fcfbf9;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+header ul li a:hover {
+  color: #e8500e;
+}
+.choose {
+  background-color: #fcfbf9;
+}
+.choose .main {
+  padding: 0;
+}
+.choose ul {
+  margin: 0;
+  padding: 15px 90px 15px 0;
+}
+.choose ul li {
+  padding-right: 65px;
+}
+.search {
+  background-image: url('../img/middle1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 389px;
+  overflow: hidden;
+  position: relative;
+}
+.search .container > div {
+  text-align: center;
+  margin-bottom: 10%;
+  margin-top: 10%;
+  color: #fff;
+}
+.search .container > div h2 {
+  font-size: 42px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  line-height: 32.5px;
+  letter-spacing: 4px;
+  margin-bottom: 23px;
+}
+.search .container > div p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  margin-bottom: 52px;
+}
+.search .container > div form {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 32.5px;
+}
+.search .container > div form input[type='text'] {
+  max-width: 344px;
+  width: 100%;
+  height: 55px;
+  border: none;
+  color: #bbbcc0;
+  text-indent: 14px;
+  border-radius: 3px;
+}
+.search .container > div form input[type='submit'] {
+  max-width: 200px;
+  width: 100%;
+  height: 55px;
+  border-radius: 3px;
+  border: none;
+  background: #e8500e url('../img/search.png') no-repeat right center;
+  text-align: left;
+  padding-left: 6%;
+  padding-right: 3.25%;
+  background-origin: content-box;
+}
+.search .container > div form ::-webkit-input-placeholder {
+  color: #bbbcc0;
+}
+.search .container > div form ::-moz-placeholder {
+  color: #bbbcc0;
+}
+.search .container > div form :-moz-placeholder {
+  color: #bbbcc0;
+}
+.search .container > div form :-ms-input-placeholder {
+  color: #bbbcc0;
+}
+.filters {
+  background: #fff;
+  margin-bottom: 20px;
+}
+.filters .header {
+  border-bottom: 1px solid #e6e6e6;
+  background: #fcfbf9;
+}
+.filters .header p {
+  display: inline-block;
+  float: left;
+  margin: 25px 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #414551;
+}
+.filters .header p.one {
+  float: right;
+}
+.filters .central {
+  margin-top: 30px;
+}
+.filters .central aside {
+  border: 1px solid #e6e6e6;
+  background-color: #fcfbf9;
+  padding: 0;
+}
+.filters .central aside .first {
+  background-color: #e8500e;
+  padding: 22px 15px;
+  text-align: center;
+}
+.filters .central aside .first ul {
+  margin: 0;
+}
+.filters .central aside .first ul li {
+  font-size: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 13.43px;
+  color: #fff;
+}
+.filters .central aside .first ul li:nth-child(2) {
+  padding: 0 87px;
+}
+.filters .central aside .second {
+  margin: 19px auto 30px;
+  height: 50px;
+  width: 333px;
+  border: 1px solid #e6e6e6;
+}
+.filters .central aside .second form {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.filters .central aside .second form input[type='text'] {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #748796;
+  font-size: 14px;
+  text-indent: 15px;
+  margin: 0;
+  width: 271px;
+  height: 100%;
+  border: none;
+}
+.filters .central aside .second form input[type='submit'] {
+  width: 55px;
+  height: 35px;
+  background: #fff url('../img/search2.png') no-repeat center;
+  border: none;
+  border-left: 1px solid #e6e6e6;
+}
+.filters .central aside .third {
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 20px;
+}
+.filters .central aside .third form ul {
+  margin-bottom: 40px;
+}
+.filters .central aside .third form ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.filters .central aside .third form ul li label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #414551;
+  text-indent: 15px;
+}
+.filters .central aside .third form .checkbox {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px;
+}
+.filters .central aside .third form .checkbox + label {
+  cursor: pointer;
+}
+.filters .central aside .third form .checkbox:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.filters .central aside .third form .checkbox:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 40px;
+}
+.filters .central aside .third form .checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  border: 1px solid #e6e6e6;
+  border-radius: 50%;
+  background: #FFF;
+}
+.filters .central aside .third form .checkbox:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #e8500e no-repeat center;
+  background-image: url('../img/check2.png');
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all .2s;
+  /*анимация, чтобы чекбокс переключался плавно*/
+}
+.filters .central aside .third form .checkbox:checked + label:after {
+  opacity: 1;
+}
+.filters .central aside .fours {
+  border-bottom: 1px solid #e6e6e6;
+}
+.filters .central aside .fours h4 {
+  margin-left: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11.51px;
+  line-height: 11.51px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #52555f;
+}
+.filters .central aside .fours form ul {
+  margin-top: 20px;
+}
+.filters .central aside .fours form ul li {
+  margin-left: 30px;
+}
+.filters .central aside .fours form .radio {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px;
+}
+.filters .central aside .fours form .radio + label {
+  cursor: pointer;
+}
+.filters .central aside .fours form .radio:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.filters .central aside .fours form .radio:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 30px;
+}
+.filters .central aside .fours form .radio:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  border: 1px solid #e6e6e6;
+  border-radius: 50%;
+  background: #FFF;
+}
+.filters .central aside .fours form .radio:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #e8500e no-repeat center;
+  background-image: url('../img/check2.png');
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all .2s;
+  /*анимация, чтобы чекбокс переключался плавно*/
+}
+.filters .central aside .fours form .radio:checked + label:after {
+  opacity: 1;
+}
+.filters .central aside .fours form label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #414551;
+  text-indent: 15px;
+}
+.filters .central aside .fifth {
+  border-bottom: 1px solid #e6e6e6;
+}
+.filters .central aside .fifth p {
+  margin: 20px 0 20px 20px;
+}
+.filters .central aside .fifth p label {
+  color: #414551;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 11.51px;
+}
+.filters .central aside .fifth p input[type='text'] {
+  border: 0;
+  color: #e8500e;
+}
+.filters .central aside .fifth div {
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.filters .central aside .fifth .ui-widget-header {
+  background-color: #e8500e;
+}
+.filters .central aside .fifth .ui-state-active {
+  background-color: #e8500e;
+  border: #e8500e;
+}
+.filters .central aside .sixth {
+  border-bottom: 1px solid #e6e6e6;
+}
+.filters .central aside .sixth h4 {
+  margin-left: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11.51px;
+  line-height: 11.51px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #52555f;
+}
+.filters .central aside .sixth form ul {
+  margin-top: 20px;
+}
+.filters .central aside .sixth form ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.filters .central aside .sixth form .checkbox {
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 17px;
+  height: 17px;
+}
+.filters .central aside .sixth form .checkbox + label {
+  cursor: pointer;
+}
+.filters .central aside .sixth form .checkbox:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.filters .central aside .sixth form .checkbox:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 40px;
+}
+.filters .central aside .sixth form .checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  border: 1px solid #e6e6e6;
+  border-radius: 50%;
+  background: #FFF;
+}
+.filters .central aside .sixth form .checkbox:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #e8500e no-repeat center;
+  background-image: url('../img/check2.png');
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all .2s;
+  /*анимация, чтобы чекбокс переключался плавно*/
+}
+.filters .central aside .sixth form .checkbox:checked + label:after {
+  opacity: 1;
+}
+.filters .central .restaurants .row {
+  border: 1px solid #ededed;
+  margin: 0 0 30px 30px;
+  background-color: #fcfbf9;
+}
+.filters .central .restaurants .block {
+  height: 100%;
+  border-radius: 2px;
+  display: flex;
+  float: left;
+}
+.filters .central .restaurants .block .left {
+  float: left;
+  padding: 15px 17px 15px 15px;
+}
+.filters .central .restaurants .block .middle {
+  font-family: 'Open Sans', sans-serif;
+  float: left;
+  padding: 15px 0;
+}
+.filters .central .restaurants .block .middle h5 {
+  color: #414551;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 6px;
+}
+.filters .central .restaurants .block .middle h6 {
+  font-size: 14px;
+  color: #748796;
+  font-weight: 300;
+  margin-top: 18px;
+  margin-bottom: 13px;
+}
+.filters .central .restaurants .block .middle .options > div {
+  float: left;
+}
+.filters .central .restaurants .block .middle .options > div:nth-child(1) img {
+  top: 1px;
+}
+.filters .central .restaurants .block .middle .options > div:nth-child(2) img {
+  top: 3px;
+}
+.filters .central .restaurants .block .middle .options > div img {
+  margin-right: 8px;
+  position: relative;
+  top: 2px;
+  float: left;
+}
+.filters .central .restaurants .block .middle .options > div span {
+  color: #748796;
+  font-size: 14px;
+  font-weight: 300;
+}
+.filters .central .restaurants .block .middle .options .price,
+.filters .central .restaurants .block .middle .options .time {
+  margin: 0;
+  margin-right: 40px;
+}
+.filters .central .restaurants .right {
+  height: 100%;
+  float: right;
+  border-left: 1px solid #e6e6e6;
+  background-color: #fff;
+  padding: 15px 37px;
+  text-align: center;
+}
+.filters .central .restaurants .right h6 {
+  font-size: 14px;
+  color: #748796;
+  font-weight: 300;
+  margin-top: 18px;
+  margin-bottom: 13px;
+}
+.filters .central .restaurants .right a {
+  display: inline-block;
+  float: right;
+  color: #e8500e;
+  font-size: 14px;
+  font-weight: 300;
+  border: 2px dashed #e8500e;
+  border-radius: 3px;
+  padding: 6px 15px;
+  text-decoration: none;
+}
+.filters .central .restaurants nav {
+  margin-left: 12px;
+}
+.filters .central .restaurants nav ul li a {
+  color: #414551;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 2px;
+  border-radius: 3px;
+}
+footer {
+  background: url('../img/footer_bg.jpg') no-repeat;
+  background-size: cover;
+  padding: 80px 0 95px;
+  position: relative;
+  z-index: 2;
+  margin-top: -5px;
+}
+footer .container .row:last-child {
+  margin-top: 90px;
+}
+footer .left {
+  margin-right: 50px !important;
+}
+footer h4 {
+  color: #fff;
+  font-size: 32px;
+  font-family: 'whatever it takes';
+  margin: 0;
+}
+footer h4 span {
+  font-weight: bold;
+  color: #e8500e;
+}
+footer h5 {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 300;
+  font-family: 'Roboto Slab', serif;
+  margin: 0;
+  margin-bottom: 12px;
+}
+footer .main {
+  color: #a2a2a3;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 32.5px;
+  list-style: none;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+footer a:hover {
+  text-decoration: none;
+  color: #e8500e;
+}
+footer img {
+  margin-right: 8px;
+}
+footer .special {
+  margin-top: 35px;
+}
+footer .special span {
+  color: #fff;
+  font-size: 21px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  margin-right: 15px;
+}
+footer .special a {
+  font-family: 'whatever it takes bold';
+  font-weight: bold;
+  color: #e8500e;
+  font-size: 26px;
+}
+@media screen and (max-width: 479px) {
+  .choose li {
+    margin: 15px 0 15px 25px;
+  }
+  .search h2 {
+    line-height: 42px !important;
+  }
+  .search form input[type="submit"] {
+    margin-top: 20px;
+  }
+  .filters aside .first li:nth-child(2) {
+    padding: 0 20px !important;
+  }
+  .filters aside .second {
+    width: 100%;
+  }
+  .filters aside .second form input[type='text'] {
+    width: 200px !important;
+  }
+  .filters .restaurants {
+    margin-top: 20px;
+  }
+  .filters .restaurants .row {
+    margin: 0 0 30px 0px !important;
+  }
+  .filters .restaurants .right {
+    width: 100%;
+    border: none !important;
+    border-top: 1px solid #e6e6e6 !important;
+  }
+  .filters .restaurants .right a {
+    margin-right: 27% !important;
+  }
+  footer {
+    text-align: center;
+  }
+  footer .container .row:last-child {
+    margin-top: 10px;
+  }
+  footer .container .row > div {
+    margin-bottom: 30px;
+  }
+  footer .main {
+    float: none;
+  }
+  footer .left {
+    margin-right: 0 !important;
+  }
+}

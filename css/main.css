@@ -9,6 +9,26 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+#page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 100500;
+}
+#page-preloader .spinner {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -30px;
+    margin-left: -30px;
+    background: url('../img/loader.gif') no-repeat 50% 50%;
+    background-size: contain;
+}
 #bg{
     position: fixed;
     top: 0;

@@ -180,6 +180,41 @@ body {
 #my-works .link a:hover {
   color: #c6576b;
 }
+#philosophy {
+  background: #e1e1e1;
+  text-align: center;
+}
+#philosophy h3 {
+  margin-top: 110px;
+  margin-bottom: 150px;
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: #414551;
+  text-transform: uppercase;
+}
+#philosophy h3 span {
+  font-family: Arial, sans-serif;
+}
+#philosophy .autoplay {
+  margin-bottom: 150px;
+}
+#philosophy .autoplay .block img {
+  margin: 0 auto;
+}
+#philosophy .autoplay .block h5 {
+  margin-top: 70px;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  color: #c6576b;
+}
+#philosophy .autoplay .block p {
+  margin-top: 30px;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: #414551;
+}
 #contacts .left {
   background: rgba(255, 255, 255, 0.7);
   border-radius: 25px;
@@ -282,6 +317,9 @@ footer h4 {
   color: #414551; 
 }
 @media screen and (max-width: 479px) {
+  .slick-prev, .slick-next {
+    display: none !important;
+  }
   #home nav {
     position: static;
   }
@@ -291,6 +329,9 @@ footer h4 {
   #home nav .logo img {
     width: 40px;
     height: 40px;
+  }
+  #home nav ul .last {
+    margin-top: 14px;
   }
   #home .main {
     margin: 0;
@@ -326,6 +367,27 @@ footer h4 {
   }
   #my-works .link a {
     font-size: 25px;
+  }
+  #philosophy h3 {
+    margin-top: 60px;
+    margin-bottom: 70px;
+  }
+  #philosophy .autoplay {
+    margin-bottom: 120px;
+  }
+  #philosophy .autoplay .block img {
+    width: 90px;
+  }
+  #philosophy .autoplay .block h5 {
+    margin-top: 40px;
+    font-size: 18px;
+  }
+  #philosophy .autoplay .block .add{
+    margin-bottom: 39px;
+  }
+  #philosophy .autoplay .block p {
+    margin-top: 20px;
+    font-size: 16px;
   }
   #contacts .left {
     margin-top: 25px;

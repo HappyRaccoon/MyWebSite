@@ -228,18 +228,20 @@ body {
   font-size: 30px;
   font-weight: bold;
 }
-#contacts .left p {
+#contacts .left a {
   color: #414551;
   font-family: 'Lato', sans-serif;
   font-size: 18px;
   font-weight: bold;
+  text-decoration: none;
+  margin-top: 15px;
 }
-#contacts .left p i {
+#contacts .left a i {
   font-size: 20px;
   color: #c6576b;
   padding-right: 10px;
 }
-#contacts .left p .last {
+#contacts .left a .last {
   font-size: 17px;
 }
 #contacts .right {
@@ -395,7 +397,7 @@ footer h4 {
   #contacts .left h4 {
     font-size: 24px;
   }
-  #contacts .left p {
+  #contacts .left a {
     font-size: 16px;
   }
   #contacts .right {

@@ -186,7 +186,7 @@ body {
 }
 #philosophy h3 {
   margin-top: 110px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   font-size: 30px;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
@@ -197,25 +197,32 @@ body {
   font-family: Arial, sans-serif;
 }
 #philosophy .autoplay {
-  margin-bottom: 95px;
+  margin-bottom: 50px;
 }
 #philosophy .autoplay .block img {
   margin: 0 auto;
+  width: 100px;
 }
 #philosophy .autoplay .block h5 {
-  margin-top: 70px;
+  margin-top: 40px;
   font-size: 25px;
   font-family: 'Montserrat', sans-serif;
   color: #c6576b;
 }
 #philosophy .autoplay .block p {
-  margin-top: 30px;
+  margin-top: 15px;
   font-size: 20px;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   color: #414551;
 }
+#philosophy .row .left img {
+  width: 70%;
+  margin: 0 auto 40px;
+  border-radius: 35px;
+}
 #philosophy .row .right h4 {
+  margin-top: 200px;
   text-align: right;
   padding-right: 40px;
   color: #f9aa32;
@@ -384,7 +391,7 @@ footer h4 {
     margin-bottom: 70px;
   }
   #philosophy .autoplay {
-    margin-bottom: 120px;
+    margin-bottom: 15px !important;
   }
   #philosophy .autoplay .block img {
     width: 90px;
@@ -399,6 +406,9 @@ footer h4 {
   #philosophy .autoplay .block p {
     margin-top: 20px;
     font-size: 16px;
+  }
+  #philosophy .row .left img {
+    width: 90% !important;
   }
   #contacts .left {
     margin-top: 25px;
@@ -420,6 +430,13 @@ footer h4 {
   }
   #home .main {
     margin-top: 30% !important;
+  }
+  #philosophy .row .left img {
+    margin-top: 20px;
+    width: 70%;
+  }
+  #philosophy .row .right h4 {
+    margin-top: 25px !important;
   }
   #my-works h3 {
     margin-top: 80px;
@@ -449,21 +466,28 @@ footer h4 {
     margin-top: 110px;;
   }
   #philosophy h3 {
-    margin-bottom:90px; 
+    margin-bottom: 60px; 
+  }
+  #philosophy .autoplay {
+    margin-bottom: 25px;
   }
   #philosophy .autoplay .block img {
-    width: 100px; 
+    width: 85px; 
   }
   #philosophy .autoplay .block h5 {
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: 20px;
   }
   #philosophy .autoplay .block p {
     font-size: 18px;
     margin-top: 20px;
   }
+  #philosophy .row .left img {
+    width: 60%;
+  }
   #philosophy .row .right h4 {
-    font-size: 33px;
+    font-size: 30px;
+    margin-top: 165px;
   }
   #contacts .right {
     margin-bottom: 30px;

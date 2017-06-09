@@ -96,21 +96,38 @@ body {
 #home .main {
   background: rgba(255, 255, 255, 0.7);
   border-radius: 35px;
-  text-align: center;
+  /*text-align: center;*/
   margin-top: 22%;
 }
 #home .main h2 {
   padding-top: 60px;
+  padding-left: 200px;
   font-size: 50px;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   color: #f9aa32;
 }
+#home .main .css-typing {
+  width: 20em;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: type 5s steps(50, end);
+}
+@keyframes type{
+  from { width: 0; }
+}
 #home .main h3 {
+  text-align: center;
   font-size: 30px;
   font-family: 'Montserrat', sans-serif;
   color: #c6576b;
   margin-top: 20px;
+  opacity: 0;
+  animation: anim 1.5s ease-out 5s;
+  animation-fill-mode: both;
+}
+@keyframes anim {
+  to { opacity: 1; }
 }
 #home .main p {
   text-align: right;
@@ -120,6 +137,12 @@ body {
   font-size: 35px;
   font-weight: 900;
   margin-bottom: 0;
+  opacity: 0;
+  animation: animat 1.5s ease-out 6s;
+  animation-fill-mode: both;
+}
+@keyframes animat {
+  to { opacity: 1; }
 }
 #home .main .one {
   padding-top: 50px;
@@ -431,6 +454,19 @@ footer h4 {
   #home .main {
     margin-top: 30% !important;
   }
+  #home .main h2 {
+    text-align: center;
+    padding-left: 0;
+  }
+  #home .main h3, #home .main p {
+    opacity: 1;
+    animation: none;
+  }
+  #home .main .css-typing {
+    width: auto;
+    animation: none;
+    white-space: normal;
+  }
   #philosophy .row .left img {
     margin-top: 20px;
     width: 70%;
@@ -491,6 +527,7 @@ footer h4 {
   }
   #contacts .right {
     margin-bottom: 30px;
+    margin-top: 45px;
   }
   #contacts .right form textarea {
     height: 170px;
